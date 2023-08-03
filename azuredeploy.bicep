@@ -13,7 +13,7 @@ param azureSearchName string = 'cog-search-${uniqueString(resourceGroup().id)}'
   'storage_optimized_l1'
   'storage_optimized_l2'
 ])
-param azureSearchSKU string = 'standard'
+param azureSearchSKU string = 'basic'
 
 @description('Optional, defaults to 1. Replicas distribute search workloads across the service. You need at least two replicas to support high availability of query workloads (not applicable to the free tier). Must be between 1 and 12.')
 @minValue(1)
